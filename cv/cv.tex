@@ -1,0 +1,222 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge N DINESH \textsc{REDDY}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{PERSONAL DATA}
+
+\begin{tabular}{rl}
+
+    %\textsc{Address:}   & The Robotics Institute, 5000 Forbes Avenue, Pittsburgh PA 15213-3890  \\
+    
+    \textsc{Phone:}     & +14127081492 \\
+    \textsc{DOB:}     & 06/09/1991 (dd/mm/yy)\\
+    \textsc{Email:}     & \href{mailto:dnarapur@andrew.cmu.edu}{dnarapur@andrew.cmu.edu}\\
+    
+
+    \textsc{Website:}     & \href{https://ps.is.tuebingen.mpg.de/person/dreddy}{[Official]} \href{https://researchweb.iiit.ac.in/~dineshreddy.n/zerotype/}{[Personal]}\\
+    \textsc{GitHub:}     & \href{https://github.com/dineshreddy91}{https://github.com/dineshreddy91}
+\end{tabular}
+
+
+%Section: Education
+\section{EDUCATION}
+\begin{tabular}{rl}	
+ \textsc{January} 2017 & Master of sceince in robotics, CMU RI, USA\\
+ \\
+
+ \textsc{March} 2016 & Internship at \textbf{Max Planck Institute For Intelligent Systems}, Germany\\
+& Project: ''Multi-View Reconstruction using Neural Networks'' \\
+&\small Advisor: \href{http://www.cvlibs.net/} {Dr. Andreas \textsc{Geiger}} \\&\\
+
+ \textsc{December} 2013 & Master of Science in \textsc{COMPUTER SCIENCE}, \textbf{IIIT-HYDERABAD}, INDIA\\
+& Thesis: ''Semantic scene understanding of Dynamic scenes'' \\
+&\normalsize  \small Advisor: \href{https://www.iiit.ac.in/people/faculty/mkrishna/} {Prof. K MADHAVA \textsc{KRISHNA}} \\&\\
+
+\textsc{August} 2009& Bachelor of Engineering (hons) in \textsc{Electrical} and \textsc{Electronics} \\ & \normalsize\textbf{BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE - PILANI}\\
+&\normalsize \small Advisor: \href{http://www.bits-pilani.ac.in/Hyderabad/sumankapur/Profile} {Prof. SUMAN \textsc{KAPUR}}\\&\\
+
+\end{tabular}
+
+\section{PEER-REVIEWED PUBLICATIONS} 
+%\subsection* {JOURNALS}
+
+%\vspace{-3 mm}
+%\textbf{N Dinesh Reddy}, Visesh Chari and K Madhava Krishna. \textbf{Using Semantic Information for Segmentation,
+%Localization and Tracking in Dynamic Environments} {\sl Robotics and Autonomous Systems (RAS) - Elsevier Special Issue on Localization and Mapping in Challenging Environments, 2016 (Under Review).}
+%\vspace{-3 mm}
+
+%\subsection* {CONFERENCES}
+\vspace{-2 mm}
+Nazrul Athar, N dinesh reddy, K madhava krishna. \textbf{Dynamic video semantic segmentation using Spatio temporal
+      optimization} {\sl International Conference on Intelligent Robots and Systems(IROS), 2017.(under review)}
+
+
+\textbf{N Dinesh Reddy}, Amit K Mondal. \textbf{Incremental Real-time Multibody VSLAM with Trajectory Optimization Using Stereo Camera.} {\sl International Conference on Intelligent Robots and Systems(IROS), 2016.}
+
+
+\textbf{N Dinesh Reddy*}, Falak Chayya*, Sarthak Upadhyay, Visesh Chari, Zeeshan Zia and K Madhava Krishna. \textbf{Monocular Reconstruction of vehicles : Combining SLAM with Shape Priors}. {\sl IEEE International Conference on Robotics and Automation(ICRA), 2016.}\href{http://robotics.iiit.ac.in/people/falak.chhaya/Monocular_Reconstruction_of_Vehicles.html}{[Project Page]}
+
+
+\textbf{N Dinesh Reddy}, Prateek, Visesh Chari and Madhava Krishna. \textbf{Dynamic Body VSLAM with Semantic Constraints.} {\sl International Conference on Intelligent Robots and Systems(IROS), 2015.} \href{https://researchweb.iiit.ac.in/~dineshreddy.n/zerotype/projects/DB-VSLAM/}{[Project Page]}
+
+
+\textbf{N Dinesh Reddy}, Prateek Singhal and K Madhava Krishna. \textbf{Semantic Motion Segmentation Using Dense CRF Formulation.} {\sl Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), 2014.} \textbf{(ORAL)} (~ 10\% acceptance rate) \href{https://researchweb.iiit.ac.in/~dineshreddy.n/zerotype/projects/SMS/} {[Project Page]}
+ 
+  Nazrul Athar, \textbf{N Dinesh Reddy}, K Madhava Krishna \textbf{Monocular Semantic Motion Segmentation using Dilated
+Convolutions} {\sl In  International Conference on Computer Vision Theory and Applications (VISAPP), 2017.}
+
+ Prateek Singhal, Aditya Deshpande, Harit Pandya, \textbf{N Dinesh Reddy} and K Madhava Krishna. \textbf{Top Down Approach to Detect Multiple Planes from Pair of Images.} {\sl Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP), 2014.} \textbf{(ORAL)}  (~ 10\% acceptance rate)
+ 
+\newpage
+ 
+ \section{SELECTED PROJECTS} 
+ {\sl \textbf{Driverless Car Challenge for Mahindra rise prize}}\\
+ Under the supervision of Dr \href{https://www.iiit.ac.in/people/faculty/mkrishna/} {K MADHAVA \textsc{KRISHNA}} and \href{https://www.linkedin.com/in/shanthi-swaroop-e-1b953527}{Dr.Shanti swarup medasani}  \\
+ We are developing a complete autonomous vehicle suitable for navigation in indian road conditions. The car perception system is developed using the low cast stereo sensors. I have played in integral role in implementing real time SLAM, GPS localization, Object and Road detection algorithms for automating the vehicle. All my publications are associated with the following work. \href{https://www.youtube.com/playlist?list=PLemkgppNt5fqMpV24R32fbYjRsfz-Fjgm} {[Video Page]} 
+ 
+{\sl \textbf{Facial Expression Detection on wild images using Active shape model}}\\
+Under the supervision of \href{http://research.google.com/pubs/ShaileshKumar.html}{Dr. Shailesh Kumar}, Google INC  \\
+Facial expressions convey non-verbal cues, which play an important role interpersonal relations. To increase the accuracy of facial expression detection , we have combined the active shape model with the gabor filter for better prediction. We have shown an improvement in the face detection by combining these features.\\
+
+%  {\sl \textbf{A Low Cost Mini-Weather Station(Texas Instruments MCU design contest}}\\
+%  Under the supervision of V chetan Kumar\\
+%Integrated all the weather station sensors onto a stellaris LM4F232 microcontroller displaying the results on a OLED screen, it had SMS, GUI and web page integration. This project was made for farmers and fisherman to update them as soon as there are fluctuations in the climate. \href{http://www.youtube.com/watch?v=kyFDzlU89iE}{Link}
+
+  {\sl \textbf{Localize of bullet on a target using ultrasonic sensors (LOBOT)}}\\
+  Under the supervision of Major R.K. Panda, SDD, Indian Army\\
+The aim of the project was to localize of bullet on a target (LOBOT) up to an
+accuracy of 0.5 mm. It involves the detection of the bullet using ultrasonic
+sensor and localization using mathematical model. This consisted using of
+outdoor sensors and precision sensors which were difficult to calibrate and was
+challenging as slight noise can cause a substantial variation in the output.
+ \section{MINI-PROJECTS} 
+$\bullet$ A Low Cost Mini-Weather Station Texas Instruments MCU design contest.\href{http://www.youtube.com/watch?v=kyFDzlU89iE}{Link} \\
+%$\bullet$ Facial Expression Detection on wild images using Active shape model under Dr. Shailesh Kumar. \\
+$\bullet$ Developed the product for detecting the amount of glucose in a blood sample for 2 rupee (3.3 cents). \\
+$\bullet$  Developed the product for testing the antibiotic is resistant or sensitive for urinary tract infection.\\
+$\bullet$ Interned at Bhilai Steel plant and worked on AC to DC conversion of power for electrical engines.\\
+$\bullet$ A Quadrotor Platform For Mines detection for Indian Army.\\
+$\bullet$ Line follower bot following a strip of black line with PID integration.\\
+\section{COMPUTER SKILLS} 
+{\sl Programming:}        C/C++, CUDA, Python, MATLAB, JAVA, PL-SQL, VERILOG\\
+{\sl Libraries:        }      TensorFlow,Torch, OpenCV, ROS, Torch, PCL,VLFEAT,ARDUINO.\\
+{\sl Software packages: }Xilinx, PSpice, MATLAB, Arduino IDE
+                       ECLIPSE, SQL DEVELOPER, AUTOCAD.\\
+%{\sl Platforms:          }   Linux, Mac OS X, Microsoft Windows.\\
+{\sl Web Tools:          }  HTML, JavaScript, PHP, SQL \\
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{COURSEWORK}
+MACHINE LEARNING\ \ \ \ \ \ \ \ \ \ \ \  MOBILE ROBOTICS \ \ \ \ \ \ \  \ \ \ \ \ ARTIFICIAL NEURAL NETWORKS \\  INTRO TO ROBOTICS\ \ \ \ \ \ \ \ \ \ \ \ COMPUTER VISION \ \ \ \  \ \ \ \ \ \ \ \   OPTIMIZATION METHODS\\
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNITY SERVICE SECTION
+%---------------------------------------------------------------------------------------- 
+
+\section{HONOURS AND AWARDS}
+%\begin{itemize}
+$\bullet$  Invited talk at perceiving systems group, Max planck Institute,Tubingen on 02-10-2015\\
+$\bullet$  Microsoft Research Travel grant to attend IROS 2015.\\
+$\bullet$ IROS student scholarship to attend IROS 2015.\\
+$\bullet$ Head of the technical team of the technical-cultural fest of BITS Hyderabad, Pearl 2012.\\
+$\bullet$  Finalist of the TI MCU Design Contest 2012 INDIA \\
+$\bullet$  First place in the Line Follower at technical fest of NIT Warangal, Technozion 2011.\\
+%\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{EXTRA-CURRICULAR ACTIVITIES} 
+%\begin{itemize}
+%$\bullet$ Active member of the IEEE student chapter and organized the IEEE Annual Conference, INDICON 2011.\\
+%$\bullet$ Nucleus member of the National Social Service (NSS) \\
+%$\bullet$ Have attended numerous Technical fests of different colleges, Technozion 2011 of NIT Warangal, Quark 2012 of BITS Goa and Magistech 2011 of MGIT Hyderabad .\\
+%$\bullet$ Organizing member of the cultural fest of our college, pearl 2010 and pearl 2011.\\
+%$\bullet$ Represented the college in the cultural fest of BITS-Pilani, Oasis 2010.\\
+%$\bullet$ Active member of robotics, astronomy, sports and literature clubs of our college.
+%\end{itemize}
+%Helped organize one of the prestigious innovation event of sabre holding, Hack Day 2012.\\
+%Have interest in badminton, basketball and reading novels.
+%----------------------------------------------------------------------------------------
+%\section{REFERENCES} 
+%K madhava Krishna,Asoosiate professor,IIIT-HYDERABAD.\\
+%Suman Kapur, Dean of international affairs, BITS-HYDERABAD\\ 
+%Arun Kumar singh, POSTDOC, Ben Gurion University of Negev\\
+%\end{resume}
+\end{document}
