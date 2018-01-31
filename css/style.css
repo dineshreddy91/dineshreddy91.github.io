@@ -492,7 +492,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
              4 ABOUT SECTION
 ==================================================*/
 .about-section{
-    background: #f0f0f0;
 }
 .author-image {
   text-align: center;
@@ -573,7 +572,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
             5 SERVICES SECTION
 ==================================================*/
 .services-section {
-    
+        background: #f0f0f0;
+
 }
 .service-space{
     height: 60px;
