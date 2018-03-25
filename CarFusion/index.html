@@ -1,0 +1,222 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<!-- Resets the style info that gets in the way - look at yui api's
+     for more information -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset/reset-min.css" /> 
+
+<script type="text/javascript" src="/~ILIM/js/ilim.js"></script>
+
+<script type="text/javascript" src="/~ILIM/js/prototype.js"></script>
+<script type="text/javascript" src="/~ILIM/js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="/~ILIM/js/lightbox.js"></script>
+
+<link rel="stylesheet" href="/~ILIM/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/~ILIM/css/lightbox.css" type="text/css" media="screen" />
+
+
+<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="/scripts/pngfix.js"></script>
+<![endif]-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Minh Vo" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>CarFusion: Combining Point Tracking and Part Detection for Dynamic 3D Reconstruction of Vehicle</title>
+<style type="text/css">
+<!--
+.table1 td {padding:17px;}
+#content a:link {text-decoration:underline;}
+#content a:hover {text-decoration:none;}
+h3 {font-size:20px; font-weight:bold; text-indent:0.5em;}
+blockquote {padding-left:40px; display:block;}
+img {border:0px;}
+strong {font-weight:bold;}
+-->
+</style>
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div id="body">
+	<div id="menu">
+		<ul>
+			
+			<li><a href="/~ILIM/">Home</a></li>
+            
+
+			
+			<li><a href="/~ILIM/people/">People</a></li>
+            
+
+      
+			<li id="selected"><a href="/~ILIM/projects/" id="sel">Projects</a></li>
+			
+
+      
+			<li><a href="/~ILIM/publications/">Publications</a></li>
+			
+      
+      
+			<li><a href="/~ILIM/databases/">Databases</a></li>
+            
+      
+      
+            <li><a href="/~ILIM/courses/">Courses</a></li>
+            
+      
+      
+			<li><a href="/~ILIM/events/">Events</a></li>
+            
+		</ul>
+	</div>
+	
+	<div id="content">
+
+
+<h1>CarFusion: Combining Point Tracking and Part Detection for Dynamic 3D Reconstruction of Vehicle</h1>
+<table class=table1>
+  <tbody>
+  <td valign="baseline" align="left" bgcolor="#ffffff" height="100%"> 
+  <div >
+  <table border="0" cellpadding="0" cellspacing="30"><tbody>
+  
+  <tr><td><p align="center"><img src="Images/teaser2.png" alt="Dance and Jump" width="600" /></td></tr>
+  <td height="300">Despite significant research in the area, reconstruction
+of multiple dynamic rigid objects (eg.   vehicles) observed
+from wide-baseline, uncalibrated and unsynchronized cameras, remains hard.  On one hand, feature tracking works
+well within each view but is hard to correspond across multiple cameras with limited overlap in fields of view or due to
+occlusions.  On the other hand, advances in deep learning
+have resulted in strong detectors that work across different
+viewpoints but are still not precise enough for triangulation based  reconstruction.   In  this  work,  we  develop  a  framework to fuse both the single-view feature tracks and multiview detected part locations to significantly improve the detection, localization and reconstruction of moving vehicles,
+even in the presence of strong occlusions.  We demonstrate
+our framework at a busy traffic intersection by reconstructing  over  40  vehicles  passing  within  a  3-minute  window.
+We evaluate the different components within our framework
+and compare to alternate approaches such as reconstruction
+using tracking-by-detection.
+</td>
+  
+  </tr><td><h3>Publications</h3><br />
+	<blockquote> <span class="style5"><b>&quot;CarFusion: Combining Point Tracking and Part Detection for Dynamic 3D Reconstruction of Vehicle&quot; </b><br /> 
+		<a href="https://www.andrew.cmu.edu/user/dnarapur/">N Dinesh Reddy</a>,  <a href="http://www.cs.cmu.edu/~mvo/">Minh Vo</a> and <a href="http://www.cs.cmu.edu/~srinivas/">Srinivasa G. Narasimhan</a><br />
+		IEEE Conference on Computer Vision and Pattern Recognition (CVPR)  2018. <br />
+		[<a href="./pdf/carfusion.pdf">PDF</a>] [<a href="https://www.youtube.com/watch?v=RUtK7xRtyns&feature=youtu.be">Video</a>] [Dataset (coming soon)]</span><br />
+	</blockquote>
+  </td></tr>
+  
+	<tr><td align="left"><h3>Contributions</h3>
+		<table border="0" cellpadding="0" cellspacing="6">
+		<tbody>
+			<tr>
+				<td align="left" valign="middle" width="400"> <img src="Images/pipeline2.png" width="360"/></a></td>
+				<td align="left" valign="middle" width="320"><p>CarFusion: Our overall pipeline for dynamic 3D reconstruction of multiple cars from uncalibrated and unsynchronized
+video cameras. We fuse the structured points (detected vehicle parts) and the tracks of the unstructured feature points
+to obtain precise reconstruction of the moving vehicle. The reconstructions are reprojected into all the views and are used to
+bootstrap and improve the detectors.</p>
+			</tr>
+
+			<tr>
+				<td align="left" valign="middle" width="400"> <img src="Images/occlusion.png" width="360"/></a></td>
+				<td align="left" valign="middle" width="320"><p>: The 2D re-projections of the steel gray colored car in many occluded configurations. The CarFusion method can
+accurately reconstruct the 3D configuration of car despite strong occlusion. The top row shows the full field of views and the
+bottom row shows zoomed in insets</p>
+			</tr>
+
+			<tr>
+				<td align="left" valign="middle" width="400"> <img src="Images/comp.png" width="360"/></a></td>
+				<td align="left" valign="middle" width="320"><p>Visualization of the reconstructed trajectories of multiple cars using cRANSAC. The insets on the right show
+detailed comparisons of the trajectories stability between cRANSAC and CarFusion. CarFusion produces clearly more stable
+trajectories. Visually, they correspond well to the motion of a moving car.</p>
+			</tr>
+			<tr>
+				<td align="left" valign="middle" width="400"> <img src="Images/reco_ultimate_s.png" width="360"/></a></td>
+				<td align="left" valign="middle" width="320"><p>Visualization of the 8/43 reconstructed cars using CarFusion. We show the 2D re-projection of the reconstructions
+onto sample frame containing those cars. All the re-projected points fit the cars well.</p>
+			</tr>
+		</tbody>
+		</table>
+	</td></tr>
+				
+		
+  
+  <tr> <td align="left"><h3>Results</h3>
+
+		<table border="0" cellpadding="0" cellspacing="6">
+		<tbody>
+
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/01.mp4" style="display:block;width:680px;height:540;">
+				</video></td>
+
+			</tr>
+				
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/02.mp4" style="display:block;width:680px;height:540;">
+				</video></td>
+			</tr>
+			
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/03.mp4" style="display:block;width:680px;height:540;">
+				</video></td>
+			</tr>
+			
+			
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/04.mp4" style="display:block;width:680px;height:270;">
+				</video></td>
+			</tr>
+			
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/05.mp4" style="display:block;width:680px;height:270;">
+				</video></td>
+			</tr>
+
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/06.mp4" style="display:block;width:680px;height:270;">
+				</video></td>
+			</tr>
+
+			<tr>
+				<td valign="middle" align="left"><br>
+				<video controls="controls" preload="auto" src="videos/07.mp4" style="display:block;width:680px;height:270;">
+				</video></td>
+			</tr>
+
+			
+		</tbody>
+		</table> 
+	</tr></td>	
+  
+  <td align="left"><h3>Acknowledgements</h3>
+	   <br />This paper was supported in parts by a Heinz Foundation grant, an NSF award CNS-1446601, an ONR grant N00014-15-1-2358, a CMU University Transportation Center T-SET grant and a PhD fellowship from Qualcomm.</td>		  
+  </tbody></table>
+</tbody></table>
+
+</div>
+</div>
+
+
+<div class="clearer"></div>
+
+<div id="footer">
+	<a href="/~ILIM/sponsors/"><em>Sponsors</em></a> <br />
+<!--	By <a href="http://www.jmhurley.net">Justin Hurley</a>-->
+</div>
+
+</body>
+
+</html>
+ 
