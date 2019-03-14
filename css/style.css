@@ -140,7 +140,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     margin-left: 15px;
     display: block;
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     cursor: pointer;
     
 }
@@ -292,15 +292,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   top: 50%;
 }
-.spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
 
-  margin: 100px auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
 
 @-webkit-keyframes sk-rotateplane {
   0% { -webkit-transform: perspective(120px) }
@@ -327,9 +319,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 ==================================================*/
 .section-title{
     color: #000;
-    margin-bottom: 65px;
+    margin-bottom: 5px;
     display: inline-block;
-    padding-left: 12px;
+    padding-left: 0px;
 }
 .section-title h2{
     font-size: 28px;
@@ -339,40 +331,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .section-title p{
-    max-width: 600px;
+    max-width: 300px;
     font-size: 14px;
 }
 .section-padding{
-    padding: 100px 0;
+    padding: 0px 0;
 }
 
-
-/*================================================
-             3 INTRO SECTION
-==================================================*/
-.intro-section{
-    height: 100%;
-}
-.welcome-area:after, .quotes-area:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .7;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    z-index: -1;
-}
-
-.welcome-area {
-    background: url(../images/intro-bg.jpg); /*** intro-section background image ***/
-    background-size: cover;
-    z-index: 1;
-    position: relative;
-    height: 100%;
-}
 
 
 
@@ -381,17 +346,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 ==================================================*/
 .custom-navbar {
     
-    background: transparent;
+    background: #000;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 .logo a {
   color: #fff;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 4px;
-  margin-top: 28px;
+  margin-top: 10px;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out 0s;
 }
@@ -418,7 +383,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     color: #fff;
     font-weight: 500;
     font-size: 12px;
-    padding: 30px 13px;
+    padding: 10px 13px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
@@ -431,11 +396,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .custom-navbar.top-nav-collapse .logo a{
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .custom-navbar.top-nav-collapse .main-menu ul.navbar-nav li a{
     color: #fff;
-     padding: 22px 13px;
+     padding: 10px 13px;
 }
 .custom-navbar.top-nav-collapse .main-menu ul.nav.navbar-nav li.active a{
     
@@ -448,44 +413,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 
-/*================================================
-             b WELCOME AREA
-==================================================*/
-.welcome-area{
-    height: 100%;
-    position: relative;
-    z-index: 3;
-}
-.welcome-table{
-    display: table;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.welcome-cell{
-    display: table-cell;
-    vertical-align: middle;
-}
-.welcome-text{
-    
-}
-.welcome-text h1{
-    font-size: 110px;
-    color: #fff;
-    margin-bottom: 15px;
-    font-weight: 700;
-    text-transform: capitalize;
-    letter-spacing: 8px;
-}
-
-.welcome-text h3{
-    color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-    text-transform: capitalize;
-    letter-spacing: 3px;
-}
-
 
 
 /*================================================
@@ -494,7 +421,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .about-section{
 }
 .author-image {
-  text-align: center;
+  text-align: left;
 }
 
 .social-icon {
@@ -510,7 +437,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     text-align: center;
     font-size: 16px;
     margin-left: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .social-icon a i{
     display: table-cell;
@@ -521,11 +448,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   padding: 20px 0;
 }
 .about-text h3{
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
 }
 .about-text p{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 28px;
 }
 .about-text .btn{
@@ -615,7 +542,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .quotes-content h3{
     font-size: 42px;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 800;
 }
 .quotes-content p{
@@ -639,7 +566,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .single-work {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     border-radius: 5px;
   margin-bottom: 26px;
   padding: 0;
@@ -663,99 +590,3 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     width: 100%;
 }
 
-
-/*================================================
-            8 CONTACT INFO SECTION
-==================================================*/
-.contact-info-section{
-     background: #f0f0f0;
-}
-.contact-form{
-	position:relative;
-}
-.contact-form .form-group{
-	margin-bottom:20px;
-}
-.form-control{
-	padding: 15px;
-	height:auto;
-	box-shadow:none !important;
-	border:none;
-	border-radius:0;
-	background:#fff;
-    border-radius: 5px;
-}
-textarea.form-control{
-	resize:vertical;
-    height: 120px;
-}
-.form-control:focus{
-	border: 0 solid;
-}
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-.btn.btn-effect.disabled{
-    box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.2);
-    cursor: not-allowed;
-}
-.btn.btn-effect.disabled:hover {
-  box-shadow: 0px 16px 22px 0px rgba(50, 50, 50, 0.2);
-  top: -5px;
-}
-.full-adress{
-    margin-left: 40px;
-}
-.contact-padding.col-md-12 {
-  padding: 15px;
-  background: #fff;
-  margin-bottom: 15px;
-    border-radius: 5px;
-}
-.full-adress p.phone, .full-adress p.mail, .full-adress p.adress{
-    position: relative;
-    padding-left: 25px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000;
-    margin: 0;
-}
-.full-adress p.phone:before, .full-adress p.mail:before, .full-adress p.adress:before{
-    position: absolute;
-    content: "\f041";
-    font-family: "FontAwesome";
-    top: 0;
-    left: 0;
-}
-.full-adress p.phone:before{
-    content: "\f095";
-}
-.full-adress p.mail:before{
-    content: "\f003 ";
-}
-.full-adress p.adress:before{
-    content: "\f041";
-}
-.full-adress p.phone a, .full-adress p.mail a{
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-}
-            
-
-/*================================================
-            9 FOOTER SECTION
-==================================================*/
-.footer{
-    background-color: #fff;
-    padding: 110px 0;
-}
-.footer-text{}
-.footer-text p{
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 0px;
-}
