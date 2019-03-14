@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[7pt]{article}
 
 %A Few Useful Packages
 \usepackage{marvosym}
@@ -8,13 +8,12 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{fullpage}
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
-\usepackage{array}
+\usepackage{tabu}
+
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
-\usepackage{tabu}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
@@ -42,6 +41,7 @@ ItalicFont = Fontin-Italic.otf
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
+
 \setlength{\TPHorizModule}{30mm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
@@ -91,13 +91,14 @@ ItalicFont = Fontin-Italic.otf
 
 
 
+\begin{small}
 
 
 \begin{table}[h!]
 
 \begin{tabu}to 0.99\textwidth{X[l] X[c] X[l]}
-Smith Hall 115 & & \textsc{Phone:} +14127081492 \\ 
-Robotics Institute & & \textsc{Website:}\href{http://www.andrew.cmu.edu/user/dnarapur/} {link}\\
+Smith Hall 117 & & \textsc{Phone:} +14127081492 \\ 
+Robotics Institute & & \textsc{Website:}\href{http://www.cs.cmu.edu/~dnarapur/} {link}\\
 5000 Forbes Avenue & & \textsc{GitHub:}\href{https://github.com/dineshreddy91} {link} \\
 Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnarapur@andrew.cmu.edu}\\
 \end{tabu}
@@ -109,11 +110,11 @@ Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnar
 %Section: Education
 \section{EDUCATION}
 \begin{tabular}{rl}	
- \textsc{Jan '17 - May '18}  & Master of science in robotics, {\bf CMU RI}, USA \\
-& Thesis: ''Muti-camera dynamic scene understanding and reconstruction'' \\
+ \textsc{Jan '17 - Cur}  & PhD in robotics, {\bf CMU RI}, USA \\
+%& Thesis: ''Muti-camera dynamic scene understanding and reconstruction'' \\
  
  & 
- %GPA: 4.33/4.33 
+%GPA: 4.00/4.00 
 \normalsize \small Advisor: \href{http://www.cs.cmu.edu/~srinivas/} {Prof. Srinivasa Narasimhan} \\
  
   \vspace{-2 mm}
@@ -124,7 +125,7 @@ Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnar
 %&\small Advisor: \href{http://www.cvlibs.net/} {Dr. Andreas \textsc{Geiger}} \\&\\
 
  \textsc{Dec} '13- {MAR} '16 & Master of Science in Computer Science, \textbf{IIIT-Hyderabad}, INDIA\\
-& Thesis: ''Semantic scene understanding of Dynamic scenes'' \\
+%& Thesis: ''Semantic scene understanding of Dynamic scenes'' \\
 & 
 %GPA: 8.5/10 
 \normalsize  \small Advisor: \href{https://www.iiit.ac.in/people/faculty/mkrishna/} {Prof. K Madhava Krishna} \\
@@ -133,7 +134,7 @@ Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnar
 &\\
 
 \textsc{Aug} '09 - \textsc{Aug} '13 & Bachelor of Engineering (hons) in \textsc{EEE}, \normalsize\textbf{BITS-Pilani},INDIA\\
-& Thesis: ''Low cost blood sugar sensor for rural poupulation'' \\
+%& Thesis: ''Low cost blood sugar sensor for rural poupulation'' \\
 & 
 %GPA: 7.64/10 
 \normalsize \small Advisor: 
@@ -149,22 +150,23 @@ Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnar
 \section{RESEARCH EXPERIENCE} 
 \begin{tabular}{rl}	
  \textsc{jan '17 - Cur} &  Graduate Research Assistant, \bf{ILIM Lab, CMU, USA}\\
- & Project: Analyzing multi-camera based reconstruction methods for intersection analysis. \\ & Consequently creating a virtual time machine to browse through events\\
+ & Project: Worked on using multi-vew information for improvement . \\ & Consequently creating a virtual time machine to browse through events\\
  & \small Advisor: \href{http://www.cs.cmu.edu/~srinivas/} {Prof. Srinivasa Narasimhan} \\
  
  \vspace{-2 mm}
 &\\
 
  \textsc{Mar '16 - Dec '16} &  PHD Intern,\bf{ Max Planck institute for intelligent systems, Germany}\\
-& Project: Learning reconstruction using deep neural networks. leveraging advances in \\  
-& neural networks for accurate large scale reconstructions\\
+& Project: Learning reconstruction using deep neural networks. leveraging \\   
+&  advances in  neural networks for accurate large scale reconstructions\\
 &\small Advisor: \href{http://www.cvlibs.net/} {Dr. Andreas Geiger} \\
 
  \vspace{-2 mm}
 &\\
 
  \textsc{Aug '13 - Mar '16} &  Graduate Research Assistant,\bf{RRC, IIIT hyderabad, INDIA}\\
- & Project: Exploiting Semantic Information for Accurate Segmentation, Localization in \\ & Dynamic Environments. Helping in autonomous navigation of challenging environments\\
+ & Project: Exploiting Semantic Information for Accurate Segmentation, \\ & Localization in  Dynamic Environments. Helping in autonomous navigation \\
+ & of challenging environments \\
  &\normalsize  \small Advisor: \href{https://www.iiit.ac.in/people/faculty/mkrishna/} {Prof. K Madhava Krishna} \\
  
   \vspace{-2 mm}
@@ -172,7 +174,7 @@ Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnar
 
 
  \textsc{Jan '13 - Aug '13 } &  Undergraduate Research Assistant,\bf{Biology lab, BITS-Pilani, INDIA}\\
- & Project: Creating low cost medical products for indian rural population.Worked on \\ & 2 rupee(5 cent) diabetic sensor currently being mass produced for rural population\\
+ & Project: Creating low cost medical research for indian rural population. \\ & Worked on 2 rupee(5 cent) diabetic sensor currently being manufactured\\
 &\normalsize \small Advisor: 
 \href{http://www.bits-pilani.ac.in/Hyderabad/sumankapur/Profile} {Prof. Suman Kapur}\\&\\
 %\textsc{March} 2016 & Internship at \textbf{Max Planck Institute For Intelligent Systems}, Germany\\
@@ -196,8 +198,10 @@ Pittsburgh PA 15213-3890 & & \textsc{Email:}\href{dnarapur@andrew.cmu.edu} {dnar
 
 %\subsection* {CONFERENCES}
 \vspace{-1 mm}
+\textbf{N Dinesh Reddy}, Minh Vo, Srinivasa Narasimhan. Occlusion-Net: Occlusion-Net: 2D/3D Occluded Keypoint Localization Using Graph Networks {\sl Int' conf' on Computer vision and pattern recognition(\textbf{CVPR}), 2019.} 
 
-
+\textbf{N Dinesh Reddy}, Minh Vo, Srinivasa Narasimhan. CarFusion: Combining Point Tracking and Part Detection for Dynamic 3D Reconstruction of Vehicles {\sl Int' conf' on Computer vision and pattern recognition(\textbf{CVPR}), 2018.}
+\href{http://www.cs.cmu.edu/~ILIM/projects/IM/CarFusion/}{[Project]}
 
 \textbf{N Dinesh Reddy}, Iman Abbasnejad, Sheetal Reddy, Amit K Mondal and Vindhya Devalla. Incremental Real-time Multibody VSLAM with Trajectory Optimization Using Stereo Camera. {\sl Int' Conf' on Intelligent Robots and Systems(\textbf{IROS}), 2016.} \href{http://ieeexplore.ieee.org/document/7759663/}{[Project]}
 
@@ -218,9 +222,9 @@ Convolutions {\sl Int' Conf' on Computer Vision Theory and Applications (\textbf
 
  Prateek Singhal, Aditya Deshpande, Harit Pandya, \textbf{N Dinesh Reddy} and K Madhava Krishna. Top Down Approach to Detect Multiple Planes from Pair of Images. {\sl Ind' Conf' on Computer Vision, Graphics and Image Processing (\textbf{ICVGIP}), 2014.} \textbf{(ORAL)}  (~ 10\% acceptance rate)
  
- \textbf{N Dinesh Reddy}, Minh Vo, Srinivasa Narasimhan. CarFusion: Combining Point Tracking and Part Detection for Dynamic 3D Reconstruction of Vehicles {\sl Int' conf' on Computer vision and pattern recognition(\textbf{CVPR}), 2018.(under review)}
  
- \textbf{N Dinesh Reddy}. LSD-Net: Look, Step and Detect for Joint Navigation and Multi-View Recognition with Deep Reinforcement Learning {\sl Int' conf' on Learning Representations(\textbf{ICLR}), 2018.(under review)}
+ 
+%6666 \textbf{N Dinesh Reddy}. LSD-Net: Look, Step and Detect for Joint Navigation and Multi-View Recognition with Deep Reinforcement Learning {\sl Int' conf' on Learning Representations(\textbf{ICLR}), 2018.(under review)}
  
  %Sheetal Reddy,\textbf{N Dinesh Reddy}, K madhava krishna. \textbf{Label Space Context Network For Small Object Detection} {\sl European Conference on Mobile Robotics(ECMR), 2017.(under review)}
 
@@ -260,12 +264,11 @@ $\bullet$ Developed the product for detecting the amount of glucose in a blood s
 $\bullet$  Developed the product for testing the antibiotic is resistant or sensitive for urinary tract infection.\\
 $\bullet$ A Quadrotor Platform For Mines detection for Indian Army.\\
 $\bullet$ Line follower bot following a strip of black line with PID integration.\\
-
 \vspace{-4 mm}
 
 \section{COMPUTER SKILLS} 
 {\sl Programming:}        C/C++, CUDA, Python, MATLAB, JAVA, PL-SQL, VERILOG\\
-{\sl Libraries:        }      TensorFlow, Torch, OpenCV, ROS, Torch, PCL ,VLFEAT, ARDUINO.\\
+{\sl Libraries:        }      Pytorch, TensorFlow, Torch, OpenCV, ROS, Torch, PCL ,VLFEAT, ARDUINO.\\
 {\sl Software packages: } Xilinx, PSpice, MATLAB, Arduino IDE
                        ECLIPSE, SQL DEVELOPER, AUTOCAD.\\
 %{\sl Platforms:          }   Linux, Mac OS X, Microsoft Windows.\\
@@ -286,6 +289,7 @@ $\bullet$ Line follower bot following a strip of black line with PID integration
 
 \section{HONOURS AND AWARDS}
 %\begin{itemize}
+$\bullet$  Invited Reviewer for ICVGIP, CVPR and IROS\\
 $\bullet$  Invited talk at perceiving systems group, Max planck Institute,Tubingen on 02-10-2015\\
 $\bullet$  Microsoft Research Travel grant to attend IROS 2015.\\
 $\bullet$ IROS student scholarship to attend IROS 2015.\\
@@ -326,9 +330,7 @@ $\bullet$ Organizing member of the cultural fest of our college, pearl 2010 and 
 %\end{resume}
 
 
+\end{small}
 
 
 \end{document}
-
-
-
